@@ -27,7 +27,7 @@ h3 {
 /* Header */
 
 #main-header {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 #main-header .container {
@@ -55,9 +55,18 @@ h3 {
   position: relative;
 }
 
+/* Style div boxes */
 #timeline ul li div {
   background-color: var(--secondary-color);
   width: 400px;
   padding: 1rem;
   position: relative;
+}
+
+#timeline ul li:nth-child(odd) div {
+  transform: translateX(50px);
+}
+
+#timeline ul li:nth-child(even) div {
+  transform: translateX(-445px);
 }
