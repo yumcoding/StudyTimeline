@@ -107,3 +107,31 @@ h3 {
   transform: translateX(-50%);
   bottom: 0;
 }
+
+@media (max-width: 900px) {
+  #timeline ul li div {
+    width: 250px;
+  }
+  #timeline ul li:nth-child(even) div {
+    transform: translateX(-295px);
+  }
+}
+
+@media (max-width: 600px) {
+  #timeline ul li {
+    margin-left: 20px;
+  }
+
+  #timeline ul li div {
+    width: calc(100vw-90px);
+  }
+  #timeline ul li:nth-child(odd) div,
+  #timeline ul li:nth-child(even) div {
+    transform: translateX(35px);
+  }
+  #timeline ul li:nth-child(even) div:after {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent var(--secondary-color) transparent transparent;
+  }
+}
