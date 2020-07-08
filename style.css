@@ -17,6 +17,13 @@ body {
   color: #333;
 }
 
+h1 {
+  margin-bottom: 0.5rem;
+}
+h3 {
+  margin-bottom: 0.4rem;
+}
+
 /* Header */
 
 #main-header {
@@ -28,10 +35,6 @@ body {
   padding: 1.5rem;
   margin: 0 auto;
   text-align: center;
-}
-
-#main-header .container h1 {
-  margin-bottom: 0.5rem;
 }
 
 /* timeline */
