@@ -51,3 +51,10 @@ body {
   padding-top: 50px;
   position: relative;
 }
+
+#timeline ul li div {
+  background-color: var(--secondary-color);
+  width: 400px;
+  padding: 1rem;
+  position: relative;
+}
