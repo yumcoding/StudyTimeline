@@ -70,3 +70,24 @@ h3 {
 #timeline ul li:nth-child(even) div {
   transform: translateX(-445px);
 }
+
+#timeline ul li div:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  bottom: 5px;
+}
+
+#timeline ul li:nth-child(odd) div:after {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent var(--secondary-color) transparent transparent;
+}
+
+#timeline ul li:nth-child(even) div:after {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent var(--secondary-color);
+}
